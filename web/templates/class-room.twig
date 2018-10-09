@@ -1,0 +1,41 @@
+{% extends 'layout-bootstrap.twig' %}
+{#{% block title %}#}
+    {#學籍資料列表#}
+{#{% endblock %}#}
+{#{% block content %}#}
+{#<div class="row">#}
+    {#<div class="col-12">#}
+        {#{{ data.學年 }}-{{ data.學期 }}#}
+        {#<ul>#}
+            {#{% for semester_class in data.學期編班 %}#}
+            {#<li>{{ semester_class.年級 }}年{{ semester_class.班名 }}班 導師：{{ semester_class.導師[0].姓名 }}</li>#}
+            {#<table border="1" style="width: 80%;">#}
+                {#<thead>#}
+                {#<tr>#}
+                    {#<td>學號1</td>#}
+                    {#<td>座號</td>#}
+                    {#<td>姓名</td>#}
+                    {#<td>性別</td>#}
+                    {#<td>身分證編碼</td>#}
+                {#</tr>#}
+                {#</thead>#}
+                {#<tbody>#}
+                {#{% for studnets in semester_class.學期編班 %}#}
+                {#<tr>#}
+                    {#<td>{{ studnets.學號 }}</td>#}
+                    {#<td>{{ studnets.座號 }}</td>#}
+                    {#<td>{{ studnets.姓名 }}</td>#}
+                    {#<td>{{ studnets.性別 }}</td>#}
+                    {#<td>{{ studnets.身分證編碼 }}</td>#}
+                {#</tr>#}
+                {#{% endfor %}#}
+                {#</tbody>#}
+            {#</table>#}
+    {#</div>#}
+{#</div>#}
+
+
+{#{% endfor %}#}
+{#{% endblock %}#}
+{% block content %}
+{% endblock %}
