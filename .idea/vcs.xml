@@ -3,6 +3,27 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/CMS" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/zf3/vendor/kokspflanze/zfc-twig" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/zf3/vendor/symfony/polyfill-ctype" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/zf3/vendor/symfony/polyfill-mbstring" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/zf3/vendor/twig/twig" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/zf3/vendor/zendframework/zend-component-installer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/zf3/vendor/zendframework/zend-config" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/zf3/vendor/zendframework/zend-escaper" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/zf3/vendor/zendframework/zend-eventmanager" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/zf3/vendor/zendframework/zend-http" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/zf3/vendor/zendframework/zend-loader" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/zf3/vendor/zendframework/zend-modulemanager" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/zf3/vendor/zendframework/zend-mvc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/zf3/vendor/zendframework/zend-mvc-plugin-flashmessenger" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/zf3/vendor/zendframework/zend-router" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/zf3/vendor/zendframework/zend-servicemanager" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/zf3/vendor/zendframework/zend-session" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/zf3/vendor/zendframework/zend-stdlib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/zf3/vendor/zendframework/zend-uri" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/zf3/vendor/zendframework/zend-validator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/zf3/vendor/zendframework/zend-view" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/web/zf3/vendor/zfcampus/zf-development-mode" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/zf3" vcs="Git" />
   </component>
 </project>
