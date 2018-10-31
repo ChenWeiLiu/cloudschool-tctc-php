@@ -1,0 +1,34 @@
+{% extends 'layout-bootstrap.twig' %}
+{% block title %}
+    學籍資料列表
+{% endblock %}
+{% block content %}
+
+        <ul>
+            {% for class_data in data %}
+            <li>{{ class_data.grade }}年{{ class_data.class_name }}班 導師：{{ class_data.tutor }}</li>
+            {#<table border="1" style="width: 80%;">#}
+                {#<thead>#}
+                {#<tr>#}
+                    {#<td>學號1</td>#}
+                    {#<td>座號</td>#}
+                    {#<td>姓名</td>#}
+                    {#<td>性別</td>#}
+                    {#<td>身分證編碼</td>#}
+                {#</tr>#}
+                {#</thead>#}
+                {#<tbody>#}
+                {#{% for studnets in semester_class.學期編班 %}#}
+                {#<tr>#}
+                    {#<td>{{ studnets.學號 }}</td>#}
+                    {#<td>{{ studnets.座號 }}</td>#}
+                    {#<td>{{ studnets.姓名 }}</td>#}
+                    {#<td>{{ studnets.性別 }}</td>#}
+                    {#<td>{{ studnets.身分證編碼 }}</td>#}
+                {#</tr>#}
+                {#{% endfor %}#}
+                {#</tbody>#}
+            {#</table>#}
+        </ul>
+{% endfor %}
+{% endblock %}
