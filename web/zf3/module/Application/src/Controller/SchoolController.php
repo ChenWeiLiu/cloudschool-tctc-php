@@ -14,7 +14,29 @@ class SchoolController extends AbstractActionController
 {
     public function indexAction()
     {
-        return new ViewModel();
+        $mysqlConn = [
+            'host' => "mysqldb",
+            'user' => "root",
+            'password' => "root",
+            'dbname' => "school_cms",
+            'charset' => "utf8mb4"
+        ];
+
+        $dsn = 'mysql:host=' . $mysqlConn['host'] . ';dbname=' . $mysqlConn['dbname'] . ';charset=' . $mysqlConn['charset'];
+
+        $mysqlPdo = new \PDO($dsn, $mysqlConn['user'], $mysqlConn['password']);
+
+        $sql = "SELECT * FROM student";
+
+        $arr = $mysqlPdo->query($sql)->fetchAll(\PDO::FETCH_ASSOC);
+
+//        print_r($arr);
+
+        $viewModel = new ViewModel();
+
+        $viewModel->setVariable('data',$arr);
+
+        return $viewModel;
     }
     
     public function helpAction()

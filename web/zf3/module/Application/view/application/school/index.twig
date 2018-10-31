@@ -1,0 +1,23 @@
+{% extends 'layout/layout' %}
+{% block content %}
+    <h1>學生資料</h1>
+    <table id="table table-hover">
+        <thead>
+        <th>#</th>
+        <th>姓名</th>
+        <th>學號</th>
+        </thead>
+        <tbody>
+            {% for v in data %}
+                <tr>
+                    <td>{{ v.id }}</td>
+                    <td>{{ v.name }}</td>
+                    <td>{{ v.stud_no }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <ul>
+
+    </ul>
+{% endblock %}
