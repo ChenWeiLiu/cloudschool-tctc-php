@@ -19,6 +19,12 @@ class IndexController extends AbstractActionController
     
     public function helpAction()
     {
-        echo "test";
+        $arr = [
+            'abc' => '1234',
+            'def' => '5050505'
+        ];
+        $viewModel = new ViewModel();
+        $viewModel-> setVariable('data', $arr);
+        return $viewModel;
     }
 }
