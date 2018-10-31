@@ -34,6 +34,16 @@ return [
                     ],
                 ],
             ],
+            'school' => [
+                'type' => Literal::class,
+                'options' => [
+                    'route'    => '/school',
+                    'defaults' => [
+                        'controller' => Controller\SchoolController::class,
+                        'action'     => 'index',
+                    ],
+                ],
+            ],
             'application' => [
                 'type'    => Segment::class,
                 'options' => [
@@ -49,6 +59,7 @@ return [
     'controllers' => [
         'factories' => [
             Controller\IndexController::class => InvokableFactory::class,
+            Controller\SchoolController::class => InvokableFactory::class,
         ],
     ],
     'view_manager' => [
