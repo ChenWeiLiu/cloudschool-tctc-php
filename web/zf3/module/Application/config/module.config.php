@@ -24,6 +24,16 @@ return [
                     ],
                 ],
             ],
+            'help' => [
+                'type' => Literal::class,
+                'options' => [
+                    'route'    => '/help',
+                    'defaults' => [
+                        'controller' => Controller\IndexController::class,
+                        'action'     => 'help',
+                    ],
+                ],
+            ],
             'application' => [
                 'type'    => Segment::class,
                 'options' => [
