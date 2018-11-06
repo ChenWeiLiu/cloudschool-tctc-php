@@ -7,6 +7,7 @@
 
 namespace Application;
 
+use Application\Controller\Factory\ControllerFactory;
 use Zend\Router\Http\Literal;
 use Zend\Router\Http\Segment;
 use Zend\ServiceManager\Factory\InvokableFactory;
@@ -58,7 +59,7 @@ return [
     ],
     'controllers' => [
         'factories' => [
-            Controller\IndexController::class => InvokableFactory::class,
+            Controller\IndexController::class => ControllerFactory::class,
             Controller\SchoolController::class => InvokableFactory::class,
         ],
     ],

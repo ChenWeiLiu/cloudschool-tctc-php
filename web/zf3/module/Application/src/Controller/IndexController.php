@@ -8,15 +8,30 @@
 namespace Application\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
+use Zend\ServiceManager\ServiceManager;
 use Zend\View\Model\ViewModel;
 
-class IndexController extends AbstractActionController
+class IndexController extends BaseController
 {
     public function indexAction()
     {
-        return new ViewModel();
+        $config = $this->getServiceManager()->get('Config');
+        $db = $config['db'];
+        $dsn = 'mysql:host=' . $db['host'] . ';dbname=' . $db['dbname'] . ';charset=' . $db['charset'];
+
+        $mysqlPdo = new \PDO($dsn, $db['user'], $db['password']);
+
+        $sql = "SELECT * FROM student";
+
+        $arr = $mysqlPdo->query($sql)->fetchAll(\PDO::FETCH_ASSOC);
+
+        $viewModel = new ViewModel();
+
+        $viewModel->setVariable('data',$arr);
+        return $viewModel;
+
     }
-    
+
     public function helpAction()
     {
         $arr = [
